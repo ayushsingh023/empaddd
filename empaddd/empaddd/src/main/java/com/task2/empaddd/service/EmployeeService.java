@@ -19,4 +19,18 @@ public class EmployeeService {
         return employeeRepository.findById(empId)
                 .orElseThrow(() -> new ResourceNotFoundException("Employee not found with id: " + empId));
     }
+    
+    public Employee updateEmployee(Employee employee, Long empId) {
+        Employee existingEmployee = employeeRepository.findById(empId)
+                .orElseThrow(() -> new ResourceNotFoundException("Employee not found with id: " + empId));
+        existingEmployee.setEmpName(employee.getEmpName());
+        existingEmployee.setAddress(employee.getAddress());
+        return employeeRepository.save(existingEmployee);
+    }
+    
+    public void deleteEmployee(Long empId) {
+        Employee existingEmployee = employeeRepository.findById(empId)
+                .orElseThrow(() -> new ResourceNotFoundException("Employee not found with id: " + empId));
+        employeeRepository.delete(existingEmployee);
+    }
 }

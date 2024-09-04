@@ -1,3 +1,33 @@
+//package com.task2.empaddd.entity;
+//
+//import jakarta.persistence.CascadeType;
+//import jakarta.persistence.Entity;
+//import jakarta.persistence.GeneratedValue;
+//import jakarta.persistence.GenerationType;
+//import jakarta.persistence.Id;
+//import jakarta.persistence.JoinColumn;
+//import jakarta.persistence.OneToOne;
+//import lombok.Data;
+//import lombok.NoArgsConstructor;
+//
+//@Entity
+//@Data
+//@NoArgsConstructor
+//public class Employee {
+//
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    private Long empId;
+//
+//    private String empName;
+//
+//    @OneToOne(cascade = CascadeType.ALL)
+//    @JoinColumn(name = "add_id", referencedColumnName = "addId")
+//    private Address address;
+//}
+
+
+
 package com.task2.empaddd.entity;
 
 import jakarta.persistence.CascadeType;

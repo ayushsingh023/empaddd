@@ -1,3 +1,29 @@
+//package com.task2.empaddd.entity;
+//
+//import jakarta.persistence.Entity;
+//import jakarta.persistence.GeneratedValue;
+//import jakarta.persistence.GenerationType;
+//import jakarta.persistence.Id;
+//import lombok.Data;
+//import lombok.NoArgsConstructor;
+//
+//@Entity
+//@Data
+//@NoArgsConstructor
+//public class Address {
+//
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    private Long addId;
+//
+//    private String street;
+//    private String state;
+//    private String pincode;
+//}
+
+
+
+
 package com.task2.empaddd.entity;
 
 import jakarta.persistence.Entity;
@@ -47,3 +73,5 @@ public class Address {
         return "Address [addId=" + addId + ", street=" + street + ", state=" + state + ", pincode=" + pincode + "]";
     }
 }
+
+
